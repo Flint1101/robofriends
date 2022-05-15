@@ -16,7 +16,6 @@ class App extends Component {
             .then(response => response.json())
             .then(users => {this.setState({ robots: users})});
     }
-
     onSearchChange = (e) => {
         this.setState({searchfield: e.target.value});
     }
